@@ -26,10 +26,7 @@ class DatabaseSeeder extends Seeder
             $penduduk = Penduduk::factory(rand(3,5))->create([
                 'keluarga_id' =>$keluarga->id,
             ]);
-
-
         }
-
         FasilitasDesa::factory(20)->create();
         KegiatanDesa::factory(50)->create();
         Dokumentasi::factory(100)->create();
